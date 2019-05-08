@@ -49,7 +49,7 @@
 						<p class="websites">Websites: <a v-bind:href="movie.imdb">IMDB</a> | <a v-bind:href="movie.website">Official</a></p>
 						
 			            <div class="social">
-			              <p class="likes" v-on:click="like(movie.likes)"><i class="fa fa-thumbs-up" aria-hidden="true" ></i> {{ movie.likes }}</p>
+			              <p class="likes" @click="movie.likes+=1"><i class="fa fa-thumbs-up" aria-hidden="true" ></i> {{ movie.likes }}</p>
 			              <p class="dislikes" @click="movie.dislikes+=1"><i class="fa fa-thumbs-down" aria-hidden="true"></i> {{ movie.dislikes }}</p>
 			            </div>
 	            </div> 
