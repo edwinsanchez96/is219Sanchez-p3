@@ -71,7 +71,7 @@ const vue_app = new Vue({
                   datestr+= dateArray[2]+", "+dateArray[0];
                   return datestr;
             },
-            like: function(index) {
+            like(index) {
                   var newindex= index+1;
                   return newindex;
             },
