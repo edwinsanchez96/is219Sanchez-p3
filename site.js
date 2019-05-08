@@ -35,6 +35,9 @@ const vue_app = new Vue({
             movies: []
 
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
+            var title = "IMDB + Edwin’s Top 8 Movies";
+            var owner = "Edwin";
+            var github = "https://github.com/edwinsanchez96/is219sanchez-p3";
       },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
