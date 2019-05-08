@@ -77,7 +77,9 @@ const vue_app = new Vue({
                   return likeCounter;
             },
             dislike: function(index) {
-                  return index-1;
+                  dislikeCounter==index;
+                  dislikeCounter++;
+                  return dislikeCounter;
             },
             timeText: function(minutes) {
                   var timestr="";
