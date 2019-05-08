@@ -73,7 +73,7 @@ const vue_app = new Vue({
             },
             like: function(index) {
                   index+=1;
-                  return index;
+                  return this.index;
             },
             dislike: function(index) {
                   index+=1;
