@@ -71,14 +71,14 @@ const vue_app = new Vue({
                   datestr+= dateArray[2]+", "+dateArray[0];
                   return datestr;
             }
-            like(index) {
+            function like(index) {
                   return index+1;
             }
-            dislike(index) {
+            function dislike(index) {
                   return index-1;
             }
             
-            timeText(minutes) {
+            function timeText(minutes) {
                   var timestr="";
                   timestr+= Math.floor(minutes/60)+"h "+minutes%60+"m";
                   return timestr;
