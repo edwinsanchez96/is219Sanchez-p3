@@ -107,10 +107,6 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     transition: background 500ms;
 }
-.likes {
-    background-color:#008700;
-    color:white;
-}
 
 /* This makes sure your Github Button is centered */
 .footer {
@@ -124,8 +120,27 @@ body {
 }
 
 /* ADD YOUR LIKE AND DISLIKE HOVER/MOUSEOVER CSS CODE HERE */
+.likes {
+    background-color:#008700;
+    color:#ffffff;
+}
 
+.dislikes {
+    background-color:#f65a5b;
+    color:#ffffff;
+}
 
+.likes:hover {
+    background-color:#f65a5b;
+    color:#008700;
+    transition:500ms;
+}
+
+.dislikes:hover {
+    background-color:#fdd6d6;
+    color:#f65a5b;
+    transition:500ms;
+}
 
 
 
