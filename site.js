@@ -72,7 +72,9 @@ const vue_app = new Vue({
                   return datestr;
             },
             like: function(index) {
-                  return index+1;
+                  likeCounter==index;
+                  likeCounter++;
+                  return likeCounter;
             },
             dislike: function(index) {
                   return index-1;
