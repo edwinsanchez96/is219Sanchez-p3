@@ -77,9 +77,7 @@ const vue_app = new Vue({
             dislike(index) {
                   return index-1;
             }
-            posterClick(index) {
-
-            }
+            
             timeText(minutes) {
                   var timestr="";
                   timestr+= Math.floor(minutes/60)+"h "+minutes%60+"m";
