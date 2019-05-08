@@ -35,12 +35,56 @@ const vue_app = new Vue({
             movies: [],
 
             /* ADD ADDITIONAL VARIABLES FOR STEP 3 HERE */
-            title:"IMDB + Edwin Top 8 Movies",
+            title:"IMDB + Edwin's Top 8 Movies",
             owner:"Edwin",
             github:"https://github.com/edwinsanchez96/is219sanchez-p3"
       },
       methods: {
             /* ADD FUNCTIONS/METHODS FOR STEP 7 HERE */
+            function makeTextDate(dateArray) {
+                  var datestr = "";
+                  if(dateArray[1]==1){
+                        datestr+="January ";
+                  }else if(dateArray[1]==2){
+                        datestr+="February ";
+                  }else if(dateArray[1]==3){
+                        datestr+="March ";
+                  }else if(dateArray[1]==4){
+                        datestr+="April ";
+                  }else if(dateArray[1]==5){
+                        datestr+="May ";
+                  }else if(dateArray[1]==6){
+                        datestr+="June ";
+                  }else if(dateArray[1]==7){
+                        datestr+="July ";
+                  }else if(dateArray[1]==8){
+                        datestr+="August ";
+                  }else if(dateArray[1]==9){
+                        datestr+="September ";
+                  }else if(dateArray[1]==10){
+                        datestr+="October ";
+                  }else if(dateArray[1]==11){
+                        datestr+="November ";
+                  }else{
+                        datestr+="December ";
+                  }
+                  datestr+= dateArray[2]+", "+dateArray[0];
+                  return datestr;
+            }
+            like(index) {
+                  return index+1;
+            }
+            dislike(index) {
+                  return index-1;
+            }
+            posterClick(index) {
+
+            }
+            timeText(minutes) {
+                  var timestr="";
+                  timestr+= Math.floor(minutes/60)+"h "+minutes%60+"m";
+                  return timestr;
+            }
       }
 })
 	
