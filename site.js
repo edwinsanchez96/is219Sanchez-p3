@@ -73,12 +73,12 @@ const vue_app = new Vue({
             },
             like: function(index) {
                   likeCounter=index;
-                  likeCounter++;
+                  likeCounter+=1;
                   return likeCounter;
             },
             dislike: function(index) {
                   dislikeCounter=index;
-                  dislikeCounter++;
+                  dislikeCounter--;
                   return dislikeCounter;
             },
             timeText: function(minutes) {
